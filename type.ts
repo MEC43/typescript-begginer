@@ -1,13 +1,8 @@
 type Player = {
-  name: string;
+  readonly name: string;
   age?: number;
 };
 
-// function playerMaker(name: string): Player {
-//   return {
-//     name,
-//   };
-// }
 const playerMaker = (name: string): Player => {
   return {
     name,
@@ -16,3 +11,6 @@ const playerMaker = (name: string): Player => {
 
 const cme = playerMaker('cme');
 cme.age = 20;
+
+const numbers: readonly number[] = [1, 2, 4, 5];
+// numbers.push(3);
