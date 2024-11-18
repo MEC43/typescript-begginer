@@ -1,9 +1,9 @@
-type Player = {
+type Players = {
   readonly name: string;
   age?: number;
 };
 
-const playerMaker = (name: string): Player => {
+const playerMaker = (name: string): Players => {
   return {
     name,
   };
